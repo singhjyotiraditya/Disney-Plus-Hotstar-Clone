@@ -1,0 +1,89 @@
+.register {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../../../assets/images/login-background.jpg);
+  height: 100vh;
+  .container {
+    padding-top: 6%;
+    width: 20%;
+    min-width: 350px;
+  }
+  .btn {
+    background: linear-gradient(to right, #0959e5, #062895); 
+  border: none;
+  color: rgb(255, 255, 255);
+  padding: 30px 40px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  width: 250px;
+  height: 50px;
+  text-align: center;
+  padding: 7px 20px;
+  font-weight: 600 !important;
+  transition: transform 0.3s ease-in-out;
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+
+  .btn {
+    padding: 7px 20px;
+    color: white;
+    &:hover {
+      font-weight: bold;
+    }
+  }
+
+  span {
+    &.helper-text {
+      font-size: 11px;
+    }
+  }
+  p {
+    &.login {
+      margin-top: 10px;
+      font-size: 20px;
+      text-transform: capitalize;
+    }
+  }
+
+  .sign-up {
+      font-size: 18px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+}
+
+.alreadyacc{
+  font-size: 17px;
+}
+
+.link-login{
+  margin-top: 20px;
+  margin-left: 10px;
+  font-size: 19px;
+  color: #0956e0;
+}
+
+.form-label{
+  font-size: 17px;
+}
+
+input{
+  border: 0;
+  box-shadow: none;
+}
+
+@media only screen and (max-width: 991px) {
+  .register {
+    .container {
+        padding-top: 240px;
+        h3 {
+          margin-bottom: 0px!important;
+        }
+      }
+  }
+
+}

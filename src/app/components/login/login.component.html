@@ -1,0 +1,32 @@
+<section class="login">
+  <div class="container">
+    <img src="assets\images\login-space.webp" alt="" id="image1">
+    <!-- <h3 class="text-white text-center p-4 mb-4 fw-bold">Login</h3> -->
+    <form novalidate [formGroup]="formLogin" (ngSubmit)="onSubmit()">
+      <!-- <div class="mb-3">
+        <label class="form-label text-white fw-bold">* Email</label>
+        <input type="text" class="form-control" placeholder="Introduce your email" formControlName="email" autocomplete="off">
+        <span class="helper-text text-white" data-error="wrong" data-success="right">* Email is required</span>
+      </div>
+      <div class="mb-3">
+        <label class="form-label text-white fw-bold">* Password</label>
+        <input type="password" class="form-control" placeholder="Introduce your password" formControlName="password" help="La contraseña debe tener minimo 8 caracteres" autocomplete="off">
+        <span class="helper-text text-white" data-error="wrong" data-success="right">* Password is required. Minium length 6 characters</span>
+      </div> -->
+      <div class="contentlogin">
+      <h5 class="text-white text-center fw-bold">Login to Disney+ Hotstar</h5>
+      </div>
+      <div class="buttons mb-3">
+        <!-- <input class="btn btn-danger sign-in" [disabled]="!formLogin.valid" type="submit" value="Login">
+        <p class="text-white text-center text-uppercase fw-bold">Or</p> -->
+        <button class="custom-btn btn fw-bold" (click)="onClick()">Login With <i class="fab fa-google ms-1"></i></button>
+      </div>
+      <div class="register d-flex align-items-center justify-content-center">
+        <h5 class="nomember text-white text-center ">Not a member?</h5>
+        <a class="create-btn btn btn-primary ms-3" routerLink="/register">Create account</a>
+      </div>
+    </form>
+  </div>
+</section>
+
+<!-- [disabled]="!formLogin.valid" -->

@@ -1,0 +1,38 @@
+$red: #E50914;
+$white: #ffffff;
+$white-transparent: #ffffff5d;
+
+*{
+  scroll-behavior: smooth;
+}
+
+.rowposter {
+  display: flex;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+.rowimg {
+  max-height: 100px;
+  object-fit: contain;
+  width: 100%;
+  box-sizing: content-box;
+  transition: transform 450ms;
+  margin: 10px 20px;
+  border-radius: 7px;
+  // border: 1px solid #797979;
+  
+  &:hover {
+    transform: scale(1.09);
+    cursor: pointer;
+  }
+}
+.largeposter {
+  max-height: 200px;
+}
+
+.movies{
+  margin: 0 30px;
+}
